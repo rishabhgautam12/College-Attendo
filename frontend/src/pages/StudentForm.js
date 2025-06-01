@@ -98,7 +98,7 @@ const StudentForm = ({ togglePopup }) => {
           try {
             console.log("Sending data to server...");
             const response = await axios.post(
-              "http://localhost:5000/sessions/attend_session",
+              "https://college-attendo.onrender.com/sessions/attend_session",
               formData,
               {
                 headers: {

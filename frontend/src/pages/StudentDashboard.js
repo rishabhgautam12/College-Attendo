@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   function getStudentSessions() {
     axios
-      .post("http://localhost:5000/sessions/getStudentSessions", {
+      .post("https://college-attendo.onrender.com/sessions/getStudentSessions", {
         token: token,
       })
       .then((response) => {

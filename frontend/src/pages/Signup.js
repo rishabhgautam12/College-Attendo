@@ -54,7 +54,7 @@ const Signup = () => {
           dob: date,
         };
         try {
-          await axios.post("http://localhost:5000/users/signup", formData);
+          await axios.post("https://college-attendo.onrender.com/users/signup", formData);
           navigate("/login");
         } catch (err) {
           console.log(err);
@@ -90,7 +90,7 @@ const Signup = () => {
  
 
     await axios
-      .post("http://localhost:5000/users/sendmail", {
+      .post("https://college-attendo.onrender.com/users/sendmail", {
         email: email,
       })
       .then((res) => {

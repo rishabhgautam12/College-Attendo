@@ -25,7 +25,7 @@ const TeacherDashboard = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/sessions/getSessions",
+        "https://college-attendo.onrender.com/sessions/getSessions",
         {},
         {
           headers: {

@@ -11,7 +11,7 @@ const SessionDetails = ({ currentSession, toggleSessionDetails }) => {
     if (currentSession) {
       async function getQR() {
         try {
-          const response = await axios.post("http://localhost:5000/sessions/getQR", {
+          const response = await axios.post("https://college-attendo.onrender.com/sessions/getQR", {
             session_id: currentSession.session_id,
             token: localStorage.getItem("token"),
           });
