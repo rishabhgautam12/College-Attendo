@@ -46,7 +46,7 @@ const Login = () => {
       };
       try {
         const response = await axios.post(
-          "http://localhost:5000/users/signin",
+          "https://college-attendo.onrender.com/users/signin",
           formData
         );
         let user = response.data.user;

@@ -88,7 +88,8 @@ const NewSession = ({ togglePopup }) => {
             };
             try {
               const response = await axios.post(
-                "http://localhost:5000/sessions/create",
+                // "http://localhost:5000/sessions/create",/
+                "https://college-attendo.onrender.com/sessions/create",
                 formData
               );
               setQrData(response.data.url);
